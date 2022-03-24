@@ -1,0 +1,152 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.beginningUI{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    vertical-align: center;
+    height: 100%;
+}
+
+.welcomeText{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.startButton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 4px black;
+    background-color: white;
+}
+
+.startButton:hover{
+    border:5px solid black;
+}
+
+.question{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.inputAnswer{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #f162ff;
+    font-family: 'Nunito', sans-serif;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+input[type='text']{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.questionTrack{
+    display: none;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+}
+
+.stopwatch{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    display: none;
+}
+
+.endingText, .scoreText{
+    font-family: 'Nunito', sans-serif;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    display: none;
+}
+
+.scoreText{
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+.endingText{
+    font-weight: 1000;
+    position: absolute;
+    font-size: 60px;
+    left: 300px;
+    top: 200px;
+}
+
+.settingsButton{
+    background-image: url("/images/gear-black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+}
+
+#blur.active{
+    animation: blur 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur {
+    0%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(10px);
+    }
+}
